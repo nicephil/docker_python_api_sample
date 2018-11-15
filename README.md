@@ -14,5 +14,5 @@ This is a sample project to demo how to use docker + python to quickly develop a
 ```shell
     docker build -t ykang:v0.0.1  .
     docker image ls
-    docker docker run -p $(pwd):/oakridge -it ykang:v0.0.1 bash
+    docker docker run -p $(pwd):/oakridge -it -p 8000:80 ykang:v0.0.1 bash
 ```
