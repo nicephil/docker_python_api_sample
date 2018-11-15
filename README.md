@@ -3,8 +3,8 @@
 This is a sample project to demo how to use docker + python to quickly develop and publish a restful API server
 
 ## Files:
-..* Dockerfile: 定义了docker image
-..* .dockerignore: 哪些文件在build docker image 的时候要排除在外
+Dockerfile: 定义了docker image
+.dockerignore: 哪些文件在build docker image 的时候要排除在外
 
 ## pre-requirement
 需要install docker 并启动docker service
