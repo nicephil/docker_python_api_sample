@@ -2,18 +2,19 @@
 
 This is a sample project to demo how to use docker + python to quickly develop and publish a restful API server
 
-## Files:
-- Dockerfile: 定义了docker image
-- .dockerignore: 哪些文件在build docker image 的时候要排除在外
-- uwsgi.sh: how to run web-server + application
-
-## pre-requirement
-需要install docker 并启动docker service
-
 ## how-to
 1. build/list/run image:
 ```shell
-    docker build -t ykang:v0.0.1  .
+    docker build -t testimg:latest  .
     docker image ls
-    docker run -v $(pwd)/src:/oakridge -it -p 8000:80 ykang:v0.0.1 bash
+    docker run -v $(pwd)/src:/oakridge -it -p 8000:80 --name mycontainer testimg:latest bash
+```
+2. detach/attach to docker:
+```shell
+    ctrl-p ctrl-q                       # Detach from docker back to host shell
+    docker attach mycontainer           # Attach from host shell to docker
+```
+3. manual start uwsgi service within docker
+```shell
+    uwsgi --http :80 --wsgi-file /oakridge/server.py --callable app
 ```
