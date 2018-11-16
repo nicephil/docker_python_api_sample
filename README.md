@@ -8,8 +8,7 @@ This example:
 2. run this image with: (1) map ``host $(pwd) to docker:/oakridge``, (2) map host ``port 8000 -> 80``
 3. mannually run inside docker to start http service
 
-Then you can browse to ``host.ip.addr:8000`` to see.
-
+Then you can browse to ``host.ip.addr:8000``.\n
 The source code is on host directory ``$(pwd)/src/server.py``
 
 ## how-to
