@@ -9,7 +9,6 @@ This example:
 3. mannually run inside docker to start http service
 
 Then you can browse to ``host.ip.addr:8000``.  
-The source code is on host directory ``$(pwd)/src/server.py``
 
 ## how-to
 You must install docker and start docker service.
@@ -29,4 +28,5 @@ After git clone, run following:
 ```shell
     uwsgi --http :80 --wsgi-file /oakridge/server.py --callable app
 ```
-a more handy WSGI server is <a href="http://docs.gunicorn.org/en/stable/index.html">gunicoren</a>, but keep in mind the focus here is python, either one works.
+a more handy WSGI server is <a href="http://docs.gunicorn.org/en/stable/index.html">gunicoren</a>, but keep in mind the focus here is python, either one works.  
+The source code is on host directory ``$(pwd)/src/server.py``
