@@ -21,8 +21,7 @@ Then you can browse to ``host.ip.addr:8000`` to see. The source code is on host 
     ctrl-p ctrl-q                       # Detach from docker back to host shell
     docker attach mycontainer           # Attach from host shell to docker
 ```
-3. manual start uwsgi service within docker
+3. manual start uwsgi service within docker, see <a href="https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html" target="_blank">python wsgi</a> for detail.
 ```shell
     uwsgi --http :80 --wsgi-file /oakridge/server.py --callable app
 ```
-see <a href="https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html" target="_blank">python wsgi</a> for detail
