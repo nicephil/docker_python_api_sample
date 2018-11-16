@@ -9,6 +9,9 @@ This example:
 3. mannually run cmd(uwsgi) inside docker to start http service
 Then you can browse to ``host.ip.addr:8000`` to see. The source code is on host directory ``$(pwd)/src/server.py``
 
+## pre-condition
+Must install docker and start docker service on host
+
 ## how-to
 1. build/list/run image:
 ```shell
