@@ -11,10 +11,9 @@ Then you can browse to ``host.ip.addr:8000`` to see. The source code is on host 
 
 a more handy WSGI server is <a href="http://docs.gunicorn.org/en/stable/index.html">gunicoren</a>, but keep in mind the focus here is python, either server works.
 
-## pre-condition
-Must install docker and start docker service on host
-
 ## how-to
+You must install docker and start docker service before doing following.
+
 1. build/list/run image:
 ```shell
     docker build -t testimg:latest  .
