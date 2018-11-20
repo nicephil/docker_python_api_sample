@@ -19,10 +19,11 @@ After git clone, run following:
     docker image ls
     docker run -v $(pwd)/src:/oakridge -it -p 8000:80 --name mycontainer testimg:latest bash
 ```
-2. detach/attach to docker:
+2. detach/attach/new-shell to docker:
 ```shell
     ctrl-p ctrl-q                       # Detach from docker back to host shell
     docker attach mycontainer           # Attach from host shell to docker
+    docker exec -it <running_container> bash  # connect to a running container with and run bash interactively
 ```
 3. manual start uwsgi service within docker, see <a href="https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html" target="_blank">python wsgi</a> for detail.
 ```shell
